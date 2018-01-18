@@ -1,0 +1,21 @@
+@import "partials/_reset.scss";
+@import "_grid.scss";
+@import "modules/_variables.scss";
+@import "modules/_breakpoints.scss";
+@import "_global_classes.scss";
+@import "partials/_header.scss";
+@import "partials/_banner.scss";
+
+
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-size: $fontSize0;
+    color: $color0;
+}

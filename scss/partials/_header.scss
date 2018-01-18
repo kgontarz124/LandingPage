@@ -1,0 +1,15 @@
+.nav-bar {
+    position: fixed;
+    height: 141px;
+    background: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: $fontSize1;
+        color: $color6;
+        font-weight: bold;
+    }
+}
