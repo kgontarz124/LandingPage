@@ -6,10 +6,131 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 
     h1 {
         font-size: $fontSize1;
         color: $color6;
         font-weight: bold;
+    }
+}
+
+.nav-bar {
+    .search {
+        position: absolute;
+        right: 13%;
+        top: 40%;
+        &__text {
+            height: 40px;
+            width: 225px;
+            background: transparent;
+            border-radius: 2px;
+            border: none;
+            padding: 0 10px;
+            position: relative;
+            color: $color5;
+            font-weight: 700;
+            &:hover,
+            &:focus {
+                border-bottom: 2px solid $color5;
+                outline:none;
+            }
+        }
+        &__submit {
+            width: 38px;
+            height: 38px;
+            background: url("../images/search.png");
+            color: transparent;
+            border: none;
+            position: absolute;
+            top: -5px;
+            right: 0;
+            outline:none;
+        }
+    }
+}
+
+.nav {
+    &--toggle {
+        position: absolute;
+        right: 5%;
+        background: transparent;
+        border: none;
+        width: 40px;
+        height: 22px;
+        top: 50%;
+        span {
+            width: 40px;
+            height: 3px;
+            background: $color5;
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 5%;
+            transform: translate(-50%, -50%);
+            transition: 0.5s 0.5s opacity;
+            opacity:1;
+
+            &:nth-of-type(1) {
+                margin-top:-10px;
+            }
+            &:nth-of-type(3) {
+                margin-top:10px;
+            }
+            &:nth-of-type(2) {
+                background: transparent;
+                &:before,
+                &:after {
+                    transition: 0.5s 0.5s all;
+                    content:'';
+                    width: 100%;
+                    height: 3.5px;
+                    background: $color5;
+                    display: block;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    opacity: 1;
+                }
+            }
+        }
+        &:focus {
+            outline:none;
+        }
+    }
+
+    &--main  {
+        // display: none;
+        position: absolute;
+    	top: 141px;
+        right: 0;
+    	height: 150px;
+    	width: 100%;
+    	background: rgba(255, 255, 255, 0.7);
+    	// text-indent: -9999px;
+    	cursor: pointer;
+        border-top: 1px solid rgba(255, 255, 255, 0.7);
+
+        ul li {
+            display: block;
+            height: 50px;
+            text-align: center;
+            padding: 15px 0;
+            transition: 0.2s ease-in-out background;
+            &:hover {
+                background: rgba(255, 255, 255, 0.7);
+                a {
+                    color: $color6;
+                }
+            }
+            a {
+                display: inline-block;
+                text-decoration: none;
+                color: $color5;
+                font-weight: 700;
+                transition: 0.2s ease-in-out color;
+            }
+        }
     }
 }

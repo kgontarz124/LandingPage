@@ -1,0 +1,38 @@
+.about-us-section {
+    .container {
+        position: relative;
+        .about-us {
+            &__title {
+                font-size: $fontSize1;
+                color: $color7;
+                font-weight: 300;
+            }
+            &__text {
+                color: $color8;
+                margin-top: 30px;
+                line-height: 27px;
+                width: 575px;
+            }
+        }
+        .phone-icon {
+            position: absolute;
+            right: 0;
+            top: -640px;
+        }
+    }
+}
+.about-us-section .row {
+    .col-6-12 {
+        padding-top: 110px;
+        height: 600px;
+        &:first-of-type {
+            padding-bottom: 83px;
+        }
+        &:last-of-type {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding-bottom: 136px;
+        }
+    }
+}
