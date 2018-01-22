@@ -1,0 +1,8 @@
+{
+   "short_name": "LandingPage",
+   "name": "LandingPage",
+   "theme_color": "#354C21",
+   "background_color": "#354C21",
+   "display": "standalone",
+   "description": "A simply website."
+}

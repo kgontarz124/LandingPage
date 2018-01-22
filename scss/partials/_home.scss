@@ -2,18 +2,13 @@
     background-image: url("../images/layer-5.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
     height: 952px;
-    border-bottom: 3px solid $color6;
-    display: flex;
-    align-items: center;
-
+    width: 100%;
+    border-bottom: 3px solid $septenary-color;
     .additional-text {
         position: absolute;
         text-transform: uppercase;
         transform: rotate(270deg);
-
         .text-transparent {
             opacity: 0.5;
         }
@@ -21,15 +16,101 @@
 }
 
 .home {
+    width: 100%;
+    opacity: 0;
+    margin-bottom: -82px;
+    transition: 1s ease-in-out opacity;
     &__title {
-        font-size: $fontSize1;
+        font-size: $senary-fontSize;
         font-weight: bold;
-        margin-bottom: 25px;
+        margin-bottom: 17px;
+        color: rgba(255, 255, 255, 0.7);
     }
 
     &__text {
         max-width: 480px;
         width: 100%;
         line-height: 25px;
+        color: $primary-color;
+    }
+}
+.home-section .container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .phone-icon {
+        position: absolute;
+        right: 45px;
+        bottom: -230px;
+        width: 50%;
+        height: auto;
+    }
+}
+
+.show {
+    opacity: 1;
+}
+
+@media #{$desktopXXXL} {
+    .home-section {height: 850px;}
+    .additional-text{display: none;}
+}
+@media #{$desktopXXL} {
+    .home-section {height: 744px;}
+}
+@media #{$desktopXL} {
+    .home-section {height: 635px;}
+}
+@media #{$desktop} {
+    .home-section {
+        height: 541px;
+        .container .phone-icon {bottom: -170px;}
+    }
+    .home {
+        margin-bottom: 42px;
+        &__title {
+            font-size: $octonary-fontSize;
+            margin-bottom: 15px;
+        }
+        &__text {
+            font-size: $quaternary-fontSize;
+            line-height: 27px;
+            width: 60%;
+        }
+    }
+}
+@media #{$tablet} {
+    .home-section {
+        background-image: url("../images/layer-3.png");
+        height: 625px;
+        width: 100%;
+        border: 0;
+        .container .phone-icon {right: 95px;}
+    }
+}
+@media (max-width:700px) {
+    .home-section .container .phone-icon {
+        right: 45px;
+        bottom: -120px;
+    }
+}
+@media #{$phoneXL} {
+    .home-section{height: 492px;}
+}
+@media #{$phoneM} {
+    .home-section{
+        height: 352px;
+        .container .phone-icon {
+            display: none;
+        }
+    }
+    .home {
+        margin-bottom: -50px;
+        &__title {
+            font-size: $quinary-fontSize;
+            margin-bottom: 10px;
+        }
+        &__text {line-height: 20px;}
     }
 }

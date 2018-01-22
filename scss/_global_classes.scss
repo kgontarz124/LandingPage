@@ -1,5 +1,29 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    font-size: $secondary-fontSize;
+    color: $primary-color;
+}
 .container {
     width: 100%;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1312px;
+    padding-left: 56px;
+	padding-right: 56px;
+}
+
+@media #{$phone} {
+    .container {
+        padding-left: 20px;
+    	padding-right: 20px;
+    }
+}
+@media #{$phone} {
+    html, body {
+        font-size: $primary-fontSize;
+    }
 }

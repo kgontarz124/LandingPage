@@ -1,13 +1,34 @@
-$fontSize0 : 14px;
-$fontSize1 : 2.5rem;
-$fontSize2 : 2.4rem;
+//fonts
+$primary-fontSize : 10px;
+$secondary-fontSize : 14px;
+$tertiary-fontSize : 1.29rem;
+$quaternary-fontSize : 1.36rem;
+$quinary-fontSize : 2rem;
+$senary-fontSize : 2.5rem;
+$septenary-fontSize : 2.4rem;
+$octonary-fontSize : 2.9rem;
 
-$color0 : #ffffff;
-$color1 : #444940;
-$color2 : #354C21;
-$color3 : #0E232D;
-$color4 : #689B3B;
-$color5: #71855F;
-$color6: #8BD24D;
-$color7: #282D2D;
-$color8: #979797;
+//colors
+$primary-color : #ffffff;
+$secondary-color : #444940;
+$tertiary-color : #354C21;
+$quaternary-color : #0E232D;
+$quinary-color : #689B3B;
+$senary-color: #71855F;
+$septenary-color: #8BD24D;
+$octonary-color: #282D2D;
+$nonary-color: #979797;
+$denary-color: rgba(255, 255, 255, 0.7);
+
+// breakpoints
+$phoneM: "(max-width: 425px)";
+$phone: "(max-width: 587px)";
+$phoneXL: "(max-width: 588px)";
+$tabletS: "(max-width: 601px)";
+$tablet: "(max-width: 751px)";
+$tabletXL: "(max-width: 840px)";
+$desktop:"(max-width: 1016px)";
+$desktopS: "(max-width: 1095px)";
+$desktopXL: "(max-width: 1200px)";
+$desktopXXL: "(max-width: 1400px)";
+$desktopXXXL: "(max-width: 1600px)";
