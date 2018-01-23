@@ -5,6 +5,8 @@
     height: 952px;
     width: 100%;
     border-bottom: 3px solid $septenary-color;
+    display: flex;
+    align-items: center;
     .additional-text {
         position: absolute;
         text-transform: uppercase;
