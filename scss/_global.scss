@@ -17,13 +17,11 @@ html, body {
 }
 
 @media #{$phone} {
+    html, body {
+        font-size: $primary-fontSize;
+    }
     .container {
         padding-left: 20px;
     	padding-right: 20px;
-    }
-}
-@media #{$phone} {
-    html, body {
-        font-size: $primary-fontSize;
     }
 }

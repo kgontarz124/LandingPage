@@ -3,6 +3,6 @@
    "name": "LandingPage",
    "theme_color": "#354C21",
    "background_color": "#354C21",
-   "display": "standalone",
+   "display": "browser",
    "description": "A simply website."
 }

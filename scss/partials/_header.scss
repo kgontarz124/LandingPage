@@ -8,7 +8,6 @@
     align-items: center;
     z-index: 1;
     transition: 0.4s ease-in-out all;
-
     a {
         text-decoration: none;
         h1 {
@@ -103,9 +102,7 @@
                 }
             }
         }
-        &:focus {
-            outline:none;
-        }
+        &:focus {outline:none;}
     }
 
     &--main  {
@@ -129,9 +126,7 @@
             transition: 0.2s ease-in-out all;
             &:hover {
                 background: $denary-color;
-                a {
-                    color: $septenary-color;
-                }
+                a {color: $septenary-color;}
             }
             a {
                 display: block;
@@ -177,9 +172,7 @@
                 &:hover {
                     background: $senary-color;
                     opacity: .9;
-                    a {
-                        color: $primary-color;
-                    }
+                    a {color: $primary-color;}
                 }
             }
         }
